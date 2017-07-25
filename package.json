@@ -2,8 +2,15 @@
     "name": "electron-win-build",
     "author": "Matt Haggard",
     "version": "0.0.1",
-    "main": "./src/main.js",
+    "main": "./src/index.js",
+    "bin": {
+        "electron-win-build": "bin/cli.js"
+    },
     "devDependencies": {
+        "@types/node": "^8.0.16",
         "typescript": "2.4.2"
+    },
+    "dependencies": {
+        "yargs": "^8.0.2"
     }
 }
