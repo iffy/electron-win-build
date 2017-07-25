@@ -1,0 +1,9 @@
+{
+    "name": "electron-win-build",
+    "author": "Matt Haggard",
+    "version": "0.0.1",
+    "main": "./src/main.js",
+    "devDependencies": {
+        "typescript": "2.4.2"
+    }
+}
