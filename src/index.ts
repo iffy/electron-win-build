@@ -1,12 +1,12 @@
 import * as yargs from 'yargs';
-import {VMBuilder} from './vm';
+import { getVMReady } from './vm';
 
 export function cli() {
   yargs
     .usage('$0 <cmd> [args]')
-    .command('prepare', 'Prepare the Windows VM', {
+    .command('build', 'Build the Windows VM', {
     }, (argv) => {
-      prepareVM();
+      getVMReady('win8build', 'win8');
     })
     .help()
     .argv
